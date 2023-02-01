@@ -1,9 +1,7 @@
 const Button = ({ children }) => {
   return (
     <div className="pushbutton">
-      <label htmlFor={children}>
-        <button>SEE MORE</button>
-      </label>
+      <button>SEE MORE</button>
     </div>
   );
 };

@@ -122,3 +122,53 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 1140px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 97vw;
+    padding: 10px 5px;
+  }
+
+  header {
+    width: 100vw;
+  }
+
+  .logo {
+    max-height: 75px;
+  }
+
+  header .container {
+    width: 95vw;
+  }
+
+  .userinfo {
+    gap: 20px;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .item.container {
+    width: 95vw;
+    height: 250px;
+  }
+
+  .maintitle {
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .operationsdesc {
+    height: 30px;
+    gap: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}

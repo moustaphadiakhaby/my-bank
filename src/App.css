@@ -143,12 +143,16 @@ button:hover {
     max-height: 75px;
   }
 
-  header .container {
-    width: 95vw;
+  .userinfo {
+    width: 60%;
+    gap: 50px;
+    justify-content: space-between;
   }
 
-  .userinfo {
-    gap: 20px;
+  header .container {
+    height: 100px;
+    width: 95vw;
+    gap: 50px;
   }
 
   .username {

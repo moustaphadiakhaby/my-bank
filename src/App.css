@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #ebeff1;
+  font-family: "Roboto", "sans-serif";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 1024px;
+  margin: 30px auto;
+  padding: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: #263338;
+}
+
+header .container {
   display: flex;
-  flex-direction: column;
+  margin-top: 0px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 120px;
+}
+
+.logo {
+  aspect-ratio: 1/1;
+  max-height: 100px;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.username {
+  font-size: 22px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pfp {
+  height: 50px;
+}
+
+.item.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maintitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px grey;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.balance,
+.amount {
+  font-family: "Courier New", "sans-serif";
+}
+
+.operations {
+  width: 95%;
+  gap: 10px;
+}
+
+.operationsdesc {
+  display: flex;
+  gap: 25px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.date {
+  color: #5a6c76;
+}
+
+.operationsdesc:nth-child(odd) {
+  background-color: white;
+}
+
+.operationsdesc:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.operationtitle {
+  flex: 1;
+}
+
+.pushbutton {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  border: none;
+  color: #55707a;
+  box-sizing: inherit;
+  background-color: #f6f7f8;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
 }
